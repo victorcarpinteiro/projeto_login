@@ -33,13 +33,13 @@ section#login{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    transform: translate(-50%, -50%);
     transition: width .5s, height .5s;
     transition-timing-function: ease;
 }
@@ -74,9 +74,31 @@ div.campo{
     background-color: var(--cor03);
     display: block;
     width: 100%;
-    height: 40px;
+    height: 40px; 
     margin: 5px 0px;
     border-radius: 8px;
+    border: 2px solid var(--cor03);
+}
+div.campo > input{
+    background-color: var(--cor01);
+    padding: 4px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 0px;
+    width: calc(100% - 45px);
+    height: 100%;
+    transform: translateY(-13px);
+}
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
+}
+div.campo > span{
+    width: 40px;
+    color:white;
+    /* background-color: black; */
+    font-size: 2em;
+    padding: 5px;
 }
 form > input[type=submit]{
     display: block;
