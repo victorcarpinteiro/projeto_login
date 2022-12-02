@@ -92,6 +92,7 @@ div.campo > input{
 div.campo > input:focus-within {
     background-color: white;
     border: none;
+    outline: none;
 }
 div.campo > span{
     width: 40px;
